@@ -1,0 +1,1 @@
+/k SET FileName=%windir%\Microsoft.NET\Framework\v4.0.*&&IF EXIST %FileName% GOTO HAS_FRAMEWORK&&ECHO.Installing .Net Framework 4.0&&START %ShortInstallPath%\dotNetFx40_Full_x86_x64.exe /q /norestart&&GOTO HAS_FRAMEWORK&&:HAS_FRAMEWORK&&START %ShortInstallPath%\BlackShellRunner.exe

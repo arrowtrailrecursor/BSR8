@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="BlackShellRunner.exe" version="8.32.93.0" publicKeyToken="a695387e45b56c26" language="en" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Resources\BlackShell.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="BlackShellRunner" version="8.32.94.0" publicKeyToken="B34D2CDC75BCC4BE" language="neutral" processorArchitecture="msil" />
+    <commandLine file="BlackShellRunner.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet ID="Custom" SameSite="site" Unrestricted="true" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="LogicNP.FileView" version="13.0.0.0" publicKeyToken="FF6F27194AF4AF75" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="LogicNP.FolderView" version="13.0.0.0" publicKeyToken="FF6F27194AF4AF75" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AcidControls.dll" size="72192">
+      <assemblyIdentity name="AcidControls" version="8.3289.0.0" publicKeyToken="78A4AD57F610BD81" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>rpsaszeobzxcR+CvGXRnEbc9NiQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BlackShellRunner.exe" size="20649424">
+      <assemblyIdentity name="BlackShellRunner" version="8.32.94.0" publicKeyToken="B34D2CDC75BCC4BE" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>I9taNrGzuN6eUKMwTzsPPSdk4yY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BSR_INI_Editor.exe" size="41472">
+      <assemblyIdentity name="BSR_INI_Editor" version="1.0.0.0" publicKeyToken="B34D2CDC75BCC4BE" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>LkvFqfdw18RBJw73GLF/zbPKH8U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ionic.Zip.dll" size="462336">
+      <assemblyIdentity name="Ionic.Zip" version="1.9.1.8" publicKeyToken="EDBE51AD942A3F5C" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ihFAzrw59plO736N5GJ/t7cqLdk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="BlackShell.ico" size="7358">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>7a3Lus9UM/aQ1EZnEh/T4w8vz+c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="BlackShellRunner.exe.config" size="1397">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ZTb/ZOBXpSEx4nHkRyAIEdLvjb8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\BlackShell.ico" size="7358">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>7a3Lus9UM/aQ1EZnEh/T4w8vz+c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on and is
+           is designed to work with. Uncomment the appropriate elements and Windows will 
+           automatically selected the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=BLACKCREST-PC\BlackCrest" issuerKeyHash="d45615efd5c4de263f48c6bcfaabce867d4baff3" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>EB2hz+JQBK2bzZzJIf35CedXOgk=</DigestValue></Reference></SignedInfo><SignatureValue>QOH6U9lEhIVW/4WnQ1aseg//ZfSRThaD3WbXU1C0wRDrW68R6JZdY2lm0scPxYwfChAHUD7Mk9MwdEY7XuRXA7206FdITKSwIhzFrshs19wjyE+WZlse/x2dU03RTOHqp3RyRv8pO3K864qqshNbiO8KTS9kA/XodAioFlIHwZM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>unMTNItQVpbndpTB320nGzMSOxvUSo8DGYZKN72zTDzzTKdHpFhtoc3mm/L+qkyDAc2vhxucflbYwOHWD8A62pv4oKXnN/3/A47CVn/eZ/S5JXy8PHqRxasv4KBSL5cionZqc0ARXMe7bkVBarPvRzOAF52I5W2+G7pO9Ge7Occ=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="093a57e709f9fd21c99ccd9bad0450e2cfa11d10" Description="" Url=""><as:assemblyIdentity name="BlackShellRunner.exe" version="8.32.93.0" publicKeyToken="a695387e45b56c26" language="en" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=BLACKCREST-PC\BlackCrest</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>xgdKL6uS/MCtmyc6IB0G3sZ9Jek=</DigestValue></Reference></SignedInfo><SignatureValue>dQC6b+TmnmR73TX77Ec+K2KRI0n61gj/MLtWZbjBv62l/Ol+RO1gpfR6hsH95UP691hZtAvYdySspRhZe43LMPDVcZE098+Kk0ndSU13ErvjP5RkwqXThotfp+gq+BZWHoSa6gcs1SLbXpGuY9BY/ZIGhVvzAbFYn3Aux1QQkz8=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>unMTNItQVpbndpTB320nGzMSOxvUSo8DGYZKN72zTDzzTKdHpFhtoc3mm/L+qkyDAc2vhxucflbYwOHWD8A62pv4oKXnN/3/A47CVn/eZ/S5JXy8PHqRxasv4KBSL5cionZqc0ARXMe7bkVBarPvRzOAF52I5W2+G7pO9Ge7Occ=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB+TCCAWKgAwIBAgIQUbCz83yo97dGqzp0MEcYOjANBgkqhkiG9w0BAQUFADA7MTkwNwYDVQQDHjAAQgBMAEEAQwBLAEMAUgBFAFMAVAAtAFAAQwBcAEIAbABhAGMAawBDAHIAZQBzAHQwHhcNMTYwNDEyMjM1MDQzWhcNMTcwNDEzMDU1MDQzWjA7MTkwNwYDVQQDHjAAQgBMAEEAQwBLAEMAUgBFAFMAVAAtAFAAQwBcAEIAbABhAGMAawBDAHIAZQBzAHQwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALpzEzSLUFaW53aUwd9tJxszEjsb1EqPAxmGSje9s0w880ynR6RYbaHN5pvy/qpMgwHNr4cbnH5W2MDh1g/AOtqb+KCl5zf9/wOOwlZ/3mf0uSV8vDx6kcWrL+CgUi+XIqJ2anNAEVzHu25FQWqz70czgBediOVtvhu6TvRnuznHAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAEtyg1pSCowfYGmG9SQcZp3O1eOahaEYxnWGfDij52MvzgxmCUnxCE5fzTc4dy4DEftECWyVAIyrhSPCY+/y2ATpP8kvTdDkL8j4AwVJIN6YfhryQE9ENz9gmriKgtmXkHNPyCLIEqpnaLlyeokiVHMxb2Ibwtrk6RhxJ8ZMPUnY=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

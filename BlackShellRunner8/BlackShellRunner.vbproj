@@ -1,0 +1,630 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A0816A36-2FA3-4C5F-B191-14011FAE4CDA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BSR.My.MyApplication</StartupObject>
+    <RootNamespace>BSR</RootNamespace>
+    <AssemblyName>BlackShellRunner</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\BlackCrest\Desktop\BlackShellRunner 8\BSR_INSTALL\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <TargetCulture>en</TargetCulture>
+    <ProductName>BlackShellRunner8</ProductName>
+    <PublisherName>BlackCrestSoft</PublisherName>
+    <SuiteName>BSR</SuiteName>
+    <WebPage>www.blackcrestsoft.jimdo.com</WebPage>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <TrustUrlParameters>true</TrustUrlParameters>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>8.32.93.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>Bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>41998,41999,42004,42016,42017,42018,42019,42020,42021,42022,42024,42025,42026,42029,42030,42031,42032,42036,42099,42104,42105,42106,42107,42108,42109,42353,42354,42355</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>1</WarningLevel>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <Optimize>true</Optimize>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>41998,41999,42004,42016,42017,42018,42019,42020,42021,42022,42024,42025,42026,42029,42030,42031,42032,42036,42099,42104,42105,42106,42107,42108,42109,42353,42354,42355</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>1</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Text</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\BlackShell.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>81CDF7FCBCD0CE50FCDEE8C68DA30AB3791A8586</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>BlackShellRunner_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>Custom</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>LSD_KEY.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <OutputPath>Bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>41998,41999,42004,42016,42017,42018,42019,42020,42021,42022,42024,42025,42026,42029,42030,42031,42032,42036,42099,42104,42105,42106,42107,42108,42109,42353,42354,42355</NoWarn>
+    <DebugType>Full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <Prefer32Bit>true</Prefer32Bit>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DefineTrace>false</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>41998,41999,42004,42016,42017,42018,42019,42020,42021,42022,42024,42025,42026,42029,42030,42031,42032,42036,42099,42104,42105,42106,42107,42108,42109,42353,42354,42355</NoWarn>
+    <DebugType>None</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <DebugSymbols>false</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>1</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Spoon|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\VirtualSpoon\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>41998,41999,42004,42016,42017,42018,42019,42020,42021,42022,42024,42025,42026,42029,42030,42031,42032,42036,42099,42104,42105,42106,42107,42108,42109,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>1</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Spoon|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <OutputPath>bin\Spoon\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>41998,41999,42004,42016,42017,42018,42019,42020,42021,42022,42024,42025,42026,42029,42030,42031,42032,42036,42099,42104,42105,42106,42107,42108,42109,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>1</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41998,41999,42004,42016,42017,42018,42019,42020,42021,42022,42024,42025,42026,42029,42030,42031,42032,42036,42099,42104,42105,42106,42107,42108,42109,42353,42354,42355</NoWarn>
+    <DebugType>Full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <DocumentationFile>
+    </DocumentationFile>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineDebug>true</DefineDebug>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41998,41999,42004,42016,42017,42018,42019,42020,42021,42022,42024,42025,42026,42029,42030,42031,42032,42036,42099,42104,42105,42106,42107,42108,42109,42353,42354,42355</NoWarn>
+    <DebugType>None</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>
+    </DocumentationFile>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Spoon|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <OutputPath>bin\x64\Spoon\</OutputPath>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41998,41999,42004,42016,42017,42018,42019,42020,42021,42022,42024,42025,42026,42029,42030,42031,42032,42036,42099,42104,42105,42106,42107,42108,42109,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>
+    </DocumentationFile>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\zip-v1.9\Release\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicNP.FileView, Version=13.0.0.0, Culture=neutral, PublicKeyToken=ff6f27194af4af75">
+      <HintPath>..\..\..\..\..\Windows\assembly\GAC_MSIL\LogicNP.FileView\13.0.0.0__ff6f27194af4af75\LogicNP.FileView.dll</HintPath>
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="LogicNP.FolderView, Version=13.0.0.0, Culture=neutral, PublicKeyToken=ff6f27194af4af75">
+      <HintPath>..\..\..\..\..\Windows\assembly\GAC_MSIL\LogicNP.FolderView\13.0.0.0__ff6f27194af4af75\LogicNP.FolderView.dll</HintPath>
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="AcidControls.ParentAcidGraphicsPath" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Windows.Forms.Design" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsCustomMessage.vb" />
+    <Compile Include="clsCustomMessageBox.vb" />
+    <Compile Include="clsExecuteCommand.vb" />
+    <Compile Include="cmpConsoleDetective.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cmpDirectorySearcher.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="clsFileInfoEx.vb" />
+    <Compile Include="clsFileType.vb" />
+    <Compile Include="clsConstuctor.vb" />
+    <Compile Include="clsIcon.vb" />
+    <Compile Include="frmBrowse.designer.vb">
+      <DependentUpon>frmBrowse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBrowse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomCommands.Designer.vb">
+      <DependentUpon>frmCustomCommands.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomCommands.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEnvironmentCommands.Designer.vb">
+      <DependentUpon>frmEnvironmentCommands.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEnvironmentCommands.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEnvironmentVariables.Designer.vb">
+      <DependentUpon>frmEnvironmentVariables.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEnvironmentVariables.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFolderDialog.Designer.vb">
+      <DependentUpon>frmFolderDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFolderDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCorners.Designer.vb">
+      <DependentUpon>frmCorners.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCorners.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHidden.Designer.vb">
+      <DependentUpon>frmHidden.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHidden.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistory.Designer.vb">
+      <DependentUpon>frmHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIconList.designer.vb">
+      <DependentUpon>frmIconList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmIconList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMessageBox.Designer.vb">
+      <DependentUpon>frmMessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOptions.Designer.vb">
+      <DependentUpon>frmOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOutput.Designer.vb">
+      <DependentUpon>frmOutput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOutput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPanelLoader.Designer.vb">
+      <DependentUpon>frmPanelLoader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPanelLoader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearch.Designer.vb">
+      <DependentUpon>frmSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShellExtension.Designer.vb">
+      <DependentUpon>frmShellExtension.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmShellExtension.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWebBrowser.Designer.vb">
+      <DependentUpon>frmWebBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWebBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWithAnimationAndItsModule.Designer.vb">
+      <DependentUpon>frmWithAnimationAndItsModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWithAnimationAndItsModule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modAdmin.vb" />
+    <Compile Include="modAmountInString.vb" />
+    <Compile Include="modBlackCrestSoftSettings.vb" />
+    <Compile Include="modBSRfrm1.vb" />
+    <Compile Include="modCustomCmd.vb" />
+    <Compile Include="modDelay.vb" />
+    <Compile Include="modFile.vb" />
+    <Compile Include="modFlash.vb" />
+    <Compile Include="modGraphics.vb" />
+    <Compile Include="modIconExtensions.vb" />
+    <Compile Include="modINIAccess.vb" />
+    <Compile Include="modMessageBoxGlobalVariables.vb" />
+    <Compile Include="modPanelEXELoader.vb" />
+    <Compile Include="modPathExistence.vb" />
+    <Compile Include="modPowerShell.vb" />
+    <Compile Include="modProperties.vb" />
+    <Compile Include="modRegShellExAndAssociation.vb" />
+    <Compile Include="modRes.vb" />
+    <Compile Include="modReturnValueTmr.vb" />
+    <Compile Include="modSerial.vb" />
+    <Compile Include="modShellWindowPosition.vb" />
+    <Compile Include="modShift.vb" />
+    <Compile Include="modStringExtensions.vb" />
+    <Compile Include="clsIconExtractor.vb" />
+    <Compile Include="clsIconHelper.vb" />
+    <Compile Include="clsIconInfo.vb" />
+    <Compile Include="cmpIconListView.designer.vb">
+      <DependentUpon>cmpIconListView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cmpIconListView.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.vb">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modZip.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="clsResourceName.vb" />
+    <Compile Include="My Project\Resources.Designer.vb" />
+    <Compile Include="My Project\Resources1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="nsIconDir.vb" />
+    <Compile Include="Resources\Commands.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Commands.resx</DependentUpon>
+    </Compile>
+    <Compile Include="clsUtility.vb" />
+    <Compile Include="clsWin32.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="cmpDirectorySearcher.resx">
+      <DependentUpon>cmpDirectorySearcher.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBrowse.resx">
+      <DependentUpon>frmBrowse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomCommands.resx">
+      <DependentUpon>frmCustomCommands.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnvironmentCommands.resx">
+      <DependentUpon>frmEnvironmentCommands.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnvironmentVariables.resx">
+      <DependentUpon>frmEnvironmentVariables.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFolderDialog.resx">
+      <DependentUpon>frmFolderDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCorners.resx">
+      <DependentUpon>frmCorners.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHidden.resx">
+      <DependentUpon>frmHidden.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistory.resx">
+      <DependentUpon>frmHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIconList.resx">
+      <DependentUpon>frmIconList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMessageBox.resx">
+      <DependentUpon>frmMessageBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOptions.resx">
+      <DependentUpon>frmOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOutput.resx">
+      <DependentUpon>frmOutput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPanelLoader.resx">
+      <DependentUpon>frmPanelLoader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearch.resx">
+      <DependentUpon>frmSearch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShellExtension.resx">
+      <DependentUpon>frmShellExtension.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWebBrowser.resx">
+      <DependentUpon>frmWebBrowser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWithAnimationAndItsModule.resx">
+      <DependentUpon>frmWithAnimationAndItsModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources1.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Commands.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Commands.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="LSD_KEY.snk" />
+    <None Include="My Project\app.manifest" />
+    <None Include="Resources\BlankIcon" />
+    <None Include="Resources\BSR_GIF.zip" />
+    <None Include="Resources\BSR_PIC.zip" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Shell32">
+      <Guid>{50A7E9B0-70EF-11D1-B75A-00A0C90564FE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BlackShell.ico" />
+    <Content Include="Resources\BlackShell.ico" />
+    <None Include="Resources\Roulette_Dares.mid" />
+    <None Include="Resources\PiratesGreen.jpg" />
+    <None Include="Resources\BSR_INF.wav" />
+    <None Include="Resources\BSR_ERR.wav" />
+    <None Include="Resources\BSRbtnClose.wav" />
+    <None Include="Resources\BSR_BtnClose.wav" />
+    <None Include="Resources\BlackShellRunner8HideShow.wav" />
+    <None Include="Resources\BSRbtnHideShow.wav" />
+    <None Include="Resources\PowerShellCommands.txt" />
+    <None Include="Resources\PowerShellCommands2.txt" />
+    <None Include="Resources\imageres_23.ico" />
+    <None Include="Resources\shell32_187.ico" />
+    <None Include="Resources\moricons_96.ico" />
+    <None Include="Resources\imageres_15.ico" />
+    <None Include="Resources\imageres_163.ico" />
+    <None Include="Resources\main_104.ico" />
+    <None Include="Resources\shell32_63001.ico" />
+    <EmbeddedResource Include="Resources\BSRbtnExit.wav" />
+    <EmbeddedResource Include="Resources\BSRbtnSel.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AcidControls\AcidControls.vbproj">
+      <Project>{e335120e-28c6-4d48-8c86-e2efd61b29e4}</Project>
+      <Name>AcidControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BSR_INI_Editor\BSR_INI_Editor.vbproj">
+      <Project>{6cd8fce4-7330-4eab-b03d-f0c87559233d}</Project>
+      <Name>BSR_INI_Editor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_IncrementBeforeBuild="False" BuildVersion_StartDate="2001/1/1" BuildVersion_UseGlobalSettings="False" BuildVersion_BuildVersioningStyle="None.Increment.None.None" BuildVersion_UpdateFileVersion="True" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_AssemblyInfoFilename="My Project\AssemblyInfo.vb" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

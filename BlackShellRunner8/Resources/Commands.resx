@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ControlPanelCmds" xml:space="preserve">
+    <value>"RunDll32.exe van.dll,RunVAN"
+"sdclt.exe /restorewizardadmin"
+"sdclt.exe /restorewizard"
+"sdclt.exe /configure"
+"rundll32.exe shwebsvc.dll,AddNetPlaceRunDll"
+"control.exe srchadmin.dll"
+"rundll32.exe shell32.dll,Options_RunDLL 5"
+"RunDll32.exe DwmApi #104"
+"RunDll32.exe DwmApi #102"
+"rundll32.exe oobefldr.dll,ShowWelcomeCenter"
+"Rundll32.exe shell32.dll,Control_RunDLL appwiz.cpl,,0"
+"Rundll32.exe msrating.dll,RatingSetupUI"
+"Rundll32.exe shell32.dll,Control_RunDLL"
+"RunDll32.exe shell32.dll,Control_RunDLL timedate.cpl"
+"RunDll32.exe shell32.dll,Control_RunDLL access.cpl,,3"
+"RunDll32.exe devmgr.dll DeviceManager_Execute"
+"RunDll32.exe shell32.dll,Control_Options 2"
+"RunDll32.exe shell32.dll,Options_RunDLL 0"
+"RunDll32.exe shell32.dll,Options_RunDLL 2"
+"RunDll32.exe shell32.dll,Options_RunDLL 7"
+"RunDll32.exe keymgr.dll,PRShowSaveWizardExW"
+"RunDll32.exe powrprof.dll,SetSuspendState"
+"RunDll32.exe shell32.dll,Control_RunDLL main.cpl @1"
+"RunDll32.exe user32.dll,LockWorkStation"
+"RunDll32.exe shell32.dll,Control_RunDLL main.cpl @0"
+"RunDll32.exe shell32.dll,SHHelpShortcuts_RunDLL Connect"
+"RunDll32.exe shell32.dll,Control_RunDLL ncpa.cpl"
+"RunDll32.exe Shell32.dll,Control_RunDLL powercfg.cpl"
+"RunDll32.exe shell32.dll,Control_RunDLL intl.cpl,,3"
+"RunDll32.exe keymgr.dll,KRShowKeyMgr"
+"RunDll32.exe shell32.dll,Control_RunDLL sysdm.cpl,,4"
+"RunDll32.exe shell32.dll,Control_RunDLL sysdm.cpl,,5"
+"RunDll32.exe shell32.dll,Options_RunDLL 1"
+"RunDll32.exe shell32.dll,Control_RunDLL nusrmgr.cpl"
+"RunDll32.exe shell32.dll,Control_RunDLL wscui.cpl"
+"RunDll32.exe SHELL32.DLL,ShellAboutW"
+"RunDll32.exe shell32.dll,Control_RunDLL hotplug.dll"
+"RunDll32.exe shell32.dll,Control_RunDLL firewall.cpl"
+"RunDll32.exe shell32.dll,Control_RunDLL NetSetup.cpl,@0,WNSW"
+"explorer.exe shell:::{21ec2020-3aea-1069-a2dd-08002b30309d}"
+"explorer.exe shell:::{1fa9085f-25a2-489b-85d4-86326eedcd87}"
+"rundll32.exe shell32.dll,Control_RunDLLmmsys.cpl"
+"rundll32.exe shell32.dll,Control_RunDLLmmsys.cpl,,2"
+"rundll32.exe shell32.dll,Control_RunDLLmmsys.cpl,,1"
+"rundll32.exe shell32.dll,Control_RunDLL appwiz.cpl"
+"rundll32.exe shell32.dll,Control_RunDLL appwiz.cpl,,2"
+"rundll32.exe shell32.dll,Control_RunDLL appwiz.cpl,,3"
+"rundll32.exe shell32.dll,Control_RunDLL collab.cpl"
+"rundll32.exe shell32.dll,Control_RunDLL collab.cpl,,1"
+"rundll32.exe shell32.dll,Control_RunDLL desk.cpl"
+"rundll32.exe shell32.dll,Control_RunDLL desk.cpl,,2"
+"rundll32.exe shell32.dll,Control_RunDLL desk.cpl,,1"
+"rundll32.exe shell32.dll,Control_RunDLL firewall.cpl"
+"rundll32.exe shell32.dll,Control_RunDLL hdwwiz.cpl"
+"rundll32.exe shell32.dll,Control_RunDLL powercfg.cpl"
+"rundll32.exe shell32.dll,Control_RunDLL powercfg.cpl,,1"
+"rundll32.exe shell32.dll,Control_RunDLL sysdm.cpl"
+"rundll32.exe shell32.dll,Control_RunDLL sysdm.cpl,,2"
+"rundll32.exe shell32.dll,Control_RunDLL sysdm.cpl,,3"
+"rundll32.exe shell32.dll,Control_RunDLL sysdm.cpl,,4"
+"rundll32.exe shell32.dll,Control_RunDLL sysdm.cpl,,5"
+"rundll32.exe shell32.dll,Control_RunDLL tabletpc.cpl"
+"rundll32.exe shell32.dll,Control_RunDLL tabletpc.cpl,,1"
+"rundll32.exe shell32.dll,Control_RunDLL tabletpc.cpl,,2"
+"rundll32.exe shell32.dll,Control_RunDLL telephon.cpl"
+"rundll32.exe shell32.dll,Control_RunDLL telephon.cpl,,1"
+"rundll32.exe shell32.dll,Control_RunDLL telephon.cpl,,2"
+"rundll32.exe shell32.dll,Control_RunDLL timedate.cpl"
+"rundll32.exe shell32.dll,Control_RunDLL timedate.cpl,,1"
+"rundll32.exe shell32.dll,Control_RunDLL wscui.cpl"
+"RunDll32.exe shell32.dll,Control_RunDLL hotplug.dll"
+"RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 8"
+"RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 2"
+"RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 1"
+"RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 16"
+"RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 32"
+"RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 255"
+"RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 4351"</value>
+  </data>
+  <data name="DOSCmds" xml:space="preserve">
+    <value>"ASSOC"
+"ATTRIB"
+"BREAK"
+"BCDEDIT"
+"CACLS"
+"CALL"
+"CD"
+"CHCP"
+"CHDIR"
+"CHKDSK"
+"CHKNTFS"
+"CLS"
+"CMD"
+"COLOR"
+"COMP"
+"COMPACT"
+"CONVERT"
+"COPY"
+"DATE"
+"DEL"
+"DISKCOMP"
+"DISKCOPY"
+"DISKPART"
+"DOSKEY"
+"DRIVERQUERY"
+"ECHO"
+"ENDLOCAL"
+"ERASE"
+"EXIT"
+"FC"
+"FIND"
+"FINDSTR"
+"FOR"
+"FORMAT"
+"FSUTIL"
+"FTYPE"
+"GOTO"
+"GPRESULT"
+"GRAFTABL"
+"HELP"
+"ICACLS"
+"IF"
+"LABEL"
+"MD"
+"MKDIR"
+"MKLINK"
+"MODE"
+"MORE"
+"MOVE"
+"OPENFILES"
+"PATH"
+"PAUSE"
+"POPD"
+"PRINT"
+"PROMPT"
+"PUSHD"
+"RD"
+"RECOVER"
+"REM"
+"REN"
+"RENAME"
+"REPLACE"
+"RMDIR"
+"ROBOCOPY"
+"SET"
+"SETLOCAL"
+"SC"
+"SCHTASKS"
+"SHIFT"
+"SHUTDOWN"
+"SORT"
+"START"
+"SUBST"
+"SYSTEMINFO"
+"TASKLIST"
+"TASKKILL"
+"TIME"
+"TITLE"
+"TREE"
+"TYPE"
+"VER"
+"VERIFY"
+"VOL"
+"XCOPY"
+"WMIC"</value>
+  </data>
+  <data name="SpecialDirs" xml:space="preserve">
+    <value>"shell:Libraries"
+"shell:MusicLibrary"
+"shell:VideosLibrary"
+"shell:OtherUsersFolder"
+"shell:DeviceMetadataStore"
+"shell:PublicSuggestedLocations"
+"shell:SuggestedLocations"
+"shell:RecordedTVLibrary"
+"shell:UserProgramFiles"
+"shell:DocumentsLibrary"
+"shell:UserPinned"
+"shell:UsersLibrariesFolder"
+"shell:PicturesLibrary"
+"shell:ImplicitAppShortcuts"
+"shell:UserProgramFilesCommon"
+"shell:Ringtones"
+"shell:CommonRingtones"
+"shell:CommonPrograms"
+"shell:GameTasks"
+"shell:UserProfiles"
+"shell:MyComputerFolder"
+"shell:SyncSetupFolder"
+"shell:DpapiKeys"
+"shell:SamplePlaylists
+"shell:Favorites"
+"shell:MyVideo"
+"shell:SearchHomeFolder"
+"shell:System"
+"shell:CommonVideo"
+"shell:SyncResultsFolder"
+"shell:LocalizedResourcesDir"
+"shell:Cookies"
+"shell:OriginalImages"
+"shell:CommonMusic"
+"shell:MyPictures"
+"shell:Cache"
+"shell:Downloads"
+"shell:CommonDownloads"
+"shell:AppData"
+"shell:SyncCenterFolder"
+"shell:MyMusic"
+"shell:ConflictFolder"
+"shell:SavedGames"
+"shell:InternetFolder"
+"shell:QuickLaunch"
+"shell:SystemCertificates"
+"shell:Contacts"
+"shell:TreePropertiesFolder"
+"shell:Profile"
+"shell:StartMenu"
+"shell:CommonAppData"
+"shell:PhotoAlbums"
+"shell:ConnectionsFolder"
+"shell:AdministrativeTools"
+"shell:PrintersFolder"
+"shell:DefaultGadgets"
+"shell:ProgramFilesX86"
+"shell:Searches"
+"shell:CommonStartup"
+"shell:ControlPanelFolder"
+"shell:SampleVideos"
+"shell:SendTo"
+"shell:ResourceDir"
+"shell:ProgramFiles"
+"shell:CredentialManager"
+"shell:PrintHood"
+"shell:MAPIFolder"
+"shell:CDBurning"
+"shell:AppUpdatesFolder"
+"shell:CommonStartMenu"
+"shell:LocalAppDataLow"
+"shell:Templates"
+"shell:Gadgets"
+"shell:Programs"
+"shell:Recent"
+"shell:SampleMusic"
+"shell:Desktop"
+"shell:CommonPictures"
+"shell:RecycleBinFolder"
+"shell:CryptoKeys"
+"shell:CommonTemplates"
+"shell:Startup"
+"shell:Links"
+"shell:OEMLinks"
+"shell:SamplePictures"
+"shell:CommonDesktop"
+"shell:NetHood"
+"shell:Games"
+"shell:CommonAdministrativeTools"
+"shell:NetworkPlacesFolder"
+"shell:SystemX86"
+"shell:History"
+"shell:AddNewProgramsFolder"
+"shell:Playlists"
+"shell:ProgramFilesCommonX86"
+"shell:PublicGameTasks"
+"shell:ChangeRemoveProgramsFolder"
+"shell:Public"
+"shell:CommonDocuments"
+"shell:CSCFolder"
+"shell:LocalAppData"
+"shell:Windows"
+"shell:UsersFilesFolder"
+"shell:ProgramFilesCommon"
+"shell:Fonts"
+"shell:Personal"
+"shell:CommonPrograms"
+"shell:Favorites"
+"shell:MyVideo"
+"shell:System"
+"shell:CommonVideo"
+"shell:LocalizedResourcesDir"
+"shell:Cookies"
+"shell:MyPictures"
+"shell:Cache"
+"shell:AppData"
+"shell:MyMusic"
+"shell:InternetFolder"
+"shell:Profile"
+"shell:StartMenu"
+"shell:CommonAppData"
+"shell:ConnectionsFolder"
+"shell:AdministrativeTools"
+"shell:PrintersFolder"
+"shell:ProgramFiles"
+"shell:CommonStartup"
+"shell:ControlPanelFolder"
+"shell:SendTo"
+"shell:ResourceDir"
+"shell:ProgramFiles"
+"shell:PrintHood"
+"shell:CDBurning"
+"shell:CommonStartMenu"
+"shell:Templates"
+"shell:Programs"
+"shell:Recent"
+"shell:Desktop"
+"shell:CommonPictures"
+"shell:RecycleBinFolder"
+"shell:CommonTemplates"
+"shell:Startup"
+"shell:CommonDesktop"
+"shell:NetHood"
+"shell:CommonAdministrativeTools"
+"shell:SystemX86"
+"shell:History"
+"shell:CommonDocuments"
+"shell:LocalAppData"
+"shell:Windows"
+"shell:Fonts"
+"shell:Personal"</value>
+  </data>
+</root>
