@@ -39,7 +39,6 @@ Partial Class frmAbout
         'picAbout
         '
         Me.picAbout.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.picAbout.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.picAbout.Image = CType(resources.GetObject("picAbout.Image"), System.Drawing.Image)
         Me.picAbout.Location = New System.Drawing.Point(10, 12)
         Me.picAbout.Name = "picAbout"
